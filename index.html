@@ -15,6 +15,12 @@
     :root {
       --link-color: var(--theme-color);
     }
+    figure {
+      text-align: center;
+    }
+    figcaption {
+      font-size: 0.85em; 
+    }
   </style>
 </head>
 
@@ -23,7 +29,14 @@
   <script>
     window.$docsify = {
       name: 'A2CGP',
-      repo: 'https://github.com/a2cgp/translate',
+      repo: 'https://github.com/a2cgp/translates',
+      markdown: {
+        renderer: {
+          image: function (href, title, text) {
+            return '<figure>' + this.origin.image.call(this, href, title, text) + '<figcaption>' + text + '</figcaption></figure>';
+          },
+        },
+      },
       alias: {
         '/.*/_sidebar.md': '/_sidebar.md',
       },

@@ -7,3 +7,4 @@
     - [1.4 隐式曲面表示](/polygon-mesh-processing/chapter1/1-4)
     - [1.5 转换方法](/polygon-mesh-processing/chapter1/1-5)
     - [1.6 总结和延伸阅读](/polygon-mesh-processing/chapter1/1-6)
+  - [第5章 参数化](/polygon-mesh-processing/chapter5/README)
